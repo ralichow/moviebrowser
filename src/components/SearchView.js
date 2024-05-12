@@ -1,9 +1,11 @@
 import Hero from "./Hero";
 
-const SearchView = () => {
+const SearchView = ({keyword, searchResults}) => {
+  const title = `you are searching for ${keyword}`
+  console.log(searchResults, "are the search results")
   return (
     <>
-      <Hero text="you are searchign for ...." />
+      <Hero text={title} />
 
     </>
   );
